@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
 .foot{
-    background: #2E376B;
+    padding: 2rem;
+    color: white;
+    background: #1C2447;
+    text-align: left;
+}
+.foot h2{
+    color: white;
+}
+p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+p:hover{
+    padding-left: 4px;
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
