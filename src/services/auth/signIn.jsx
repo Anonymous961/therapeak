@@ -1,23 +1,28 @@
-import {signInWithPopup, GoogleAuthProvider,  signInWithEmailAndPassword  } from "firebase/auth";
-import {auth} from "../firebase";
+import {
+  signInWithPopup,
+  GoogleAuthProvider,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../firebase";
 import { useState } from "react";
 
-const signIn = () => {
-    const [email,setEmail]=useState("");
-    const [password,setPassword]=useState("");
-    const provider = new GoogleAuthProvider();
+const SignIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const provider = new GoogleAuthProvider();
 
-    const googleSignIn=()=>{
-        signInWithPopup(auth, provider)
-        .then((result) => {
-            console.log("user created!");
-            console.log(result);
-        }).catch((error) => {
-            console.log(error.message)
-        });
-    }
+  const googleSignIn = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log("user created!");
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
-    const SignIn=()=>{
+    const signIn=()=>{
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
@@ -27,11 +32,11 @@ const signIn = () => {
             console.log(error.message)
         });
     }
-
+    
     return ( 
         <>
             <div className="container">
-                <form onSubmit={SignIn}>
+                <form onSubmit={signIn}>
                     <label>Email:</label>
                     <input type="text" required value={email} onChange={(e)=>setEmail(e.target.value)} />
                     <label>Password:</label>
@@ -46,4 +51,4 @@ const signIn = () => {
      );
 }
  
-export default signIn;
+export default SignIn;

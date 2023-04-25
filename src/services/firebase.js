@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDe8B4gDwmWr1I-ZEDfPpHnKsA2Ha8KLKw",
-  authDomain: "therapeak.firebaseapp.com",
-  projectId: "therapeak",
-  storageBucket: "therapeak.appspot.com",
-  messagingSenderId: "298837084919",
-  appId: "1:298837084919:web:2caad69ecde5ae80aba1f2"
+  apiKey: "AIzaSyDP-MjTS4e9KuUHIBCbC35uOHZAY5at3KY",
+  authDomain: "therapeak-90f0f.firebaseapp.com",
+  projectId: "therapeak-90f0f",
+  storageBucket: "therapeak-90f0f.appspot.com",
+  messagingSenderId: "181512940143",
+  appId: "1:181512940143:web:6ade18e680599f7718bb9a"
 };
 
 // init firebase
