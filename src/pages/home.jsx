@@ -15,6 +15,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="container">
+                <img src="https://i.postimg.cc/sDT4yQbz/Ellipse-5.png" className='ellipse' id="one" alt="" />
+                <img src="https://i.postimg.cc/htjbGLds/Ellipse-6.png" className='ellipse' id="two"  alt="" />
+                <img src="https://i.postimg.cc/50MC8L6Z/Ellipse-7.png" className='ellipse' id="three" alt="" />
+                <img src="https://i.postimg.cc/MpMM4dBC/Ellipse-9.png" className='ellipse' id="four" alt="" />
                 <div className="row" style={{marginBottom:"4rem"}}>
                     <div className="col-4 images">
                         <img className='features' src="https://i.postimg.cc/526knH2L/undraw-Diary-re-4jpc-1.png" alt="" /> <br />
@@ -59,6 +63,7 @@ const Home = () => {
             </div>
             <div className="row">
                     <div className="container motivation">
+                        
                         <h1 className='motivation-heading'>DAILY MOTIVATION FOR YOU</h1>
                         <div className="quotes">
                         <h3>

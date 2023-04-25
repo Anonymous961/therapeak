@@ -2,7 +2,7 @@
 #upper-land-page{
     background: #B6DBFF;
     height: 564px;
-    margin-bottom: 10vh;
+    margin-bottom: 10rem;
 }
 #tagline{
     margin:7rem 0 0 7rem;
@@ -59,23 +59,27 @@
     font-size: 61px;
     margin-bottom: 6rem;
 }
-/* .ex{ */
-    /* background-color: #fc765e96; */
-    /* z-index: 100; */
-/* } */
+/* .ex{ 
+    height: 120%;
+    width: 100%;
+    background-color: #fc765e96;
+    position: absolute;
+    z-index: 100;
+} */
 .quotes{
     /* width: 70%; */
     border-radius: 90px 0 90px 0;
     padding: 4rem;
     height: 9rem;
     font-family: 'Raleway';
- 
+
     margin: 3rem;
     background-color: #ffb2b19c;
     padding: 2rem;
 }
 .quotes h3{
     font-weight: 800;
+    font-size: 35px;
 }
 #about h1{
     font-size: 75px;
@@ -111,4 +115,36 @@
 .next{
     background-color: rgba(255, 255, 255, 0);
     border: none;
+}
+#one{
+    z-index: 100;
+    position: absolute;
+    width: 203px;
+    height: 200px;
+    left: 1186px;
+    top: 725px;
+}
+#two{
+    z-index: 100;
+    position: absolute;
+    width: 203px;
+    height: 200px;
+    left: 45px;
+    top: 1090px;
+}
+#three{
+    z-index: -1;
+    position: absolute;
+    width: 203px;
+    height: 200px;
+    left: 1223px;
+    top: 1632px;
+}
+#four{
+    z-index: -100;
+    position: absolute;
+    width: 203px;
+    height: 200px;
+    left: 45px;
+    top: 2000px;
 }
