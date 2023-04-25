@@ -9,13 +9,13 @@ const firebaseConfig = {
   projectId: "therapeak-90f0f",
   storageBucket: "therapeak-90f0f.appspot.com",
   messagingSenderId: "181512940143",
-  appId: "1:181512940143:web:6ade18e680599f7718bb9a"
+  appId: "1:181512940143:web:6ade18e680599f7718bb9a",
 };
 
 // init firebase
 const app = initializeApp(firebaseConfig);
-const auth=getAuth(app);
+const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-export {app,auth,db,storage};
+export { app, auth, db, storage };
