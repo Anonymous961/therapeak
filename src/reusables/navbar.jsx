@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./styles/navbar.css";
 const Navbarr = () => {
     return ( 
@@ -27,8 +26,8 @@ const Navbarr = () => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link className='navs' href="#about">About Us</Nav.Link>
-            <Nav.Link className="navs"eventKey={2} href="#memes">
+            <Nav.Link className='navs' style={{fontSize:"25px"}} href="#about">About Us</Nav.Link>
+            <Nav.Link className="navs" style={{fontSize:"25px"}} href="#memes">
               Donate
             </Nav.Link>
             <Nav.Link href="#home">

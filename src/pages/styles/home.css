@@ -72,7 +72,7 @@
     padding: 4rem;
     height: 9rem;
     font-family: 'Raleway';
-
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.199);
     margin: 3rem;
     background-color: #ffb2b19c;
     padding: 2rem;
@@ -125,7 +125,7 @@
     top: 725px;
 }
 #two{
-    z-index: 100;
+    z-index: -10;
     position: absolute;
     width: 203px;
     height: 200px;
