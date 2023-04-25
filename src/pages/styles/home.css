@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+#upper-land-page{
+    background: #B6DBFF;
+    height: 564px;
+    margin-bottom: 10vh;
+}
+#tagline{
+    margin:7rem 0 0 7rem;
+    width: 530px;
+    height: 122px;
+    text-align: left;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    color: #000000;
+}
+#join{
+    margin: 2rem;
+    font-size: x-large ;
+    border-radius: 33px;
+    background: #2E376B;
+    color: #fff;
+    font-family: 'Raleway';
+    width: 150px;
+    height: 50px;
+}
+.images{
+    border: 1px solid black;
+    border-radius: 25px 0 0 25px;
+    box-shadow: 11px 11px #0000002e;
+}
+.descrip{
+    font-family: 'Raleway';
+    margin-left: 3rem;
+    border-radius: 0 25px 25px 0;
+    text-align: left;
+    border: 1px solid black;
+    box-shadow: 11px 11px #0000002e;
+}
+.descrip h3{
+    margin: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.features{
+    margin: 1rem;
+}
+.motivation{
+    padding: 10rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    background-image: url(https://i.postimg.cc/qqJsxfDb/motivation.gif);
+    /* background-color: #fc765ead; */
+    background-size: 95%;
+}
+.motivation h1{
+    color: white;
+    font-size: 61px;
+    margin-bottom: 6rem;
+}
+/* .ex{ */
+    /* background-color: #fc765e96; */
+    /* z-index: 100; */
+/* } */
+.quotes{
+    /* width: 70%; */
+    border-radius: 90px 0 90px 0;
+    padding: 4rem;
+    height: 9rem;
+    font-family: 'Raleway';
+ 
+    margin: 3rem;
+    background-color: #ffb2b19c;
+    padding: 2rem;
+}
+.quotes h3{
+    font-weight: 800;
+}
+#about h1{
+    font-size: 75px;
+    margin-bottom: 2rem;
+}
+#about{
+    margin-bottom: 4rem;
+}
+.about{
+    background: rgba(46, 55, 107, 0.9);
+    border-radius: 120px;
+}
+.about h3{
+    text-align: left;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 4rem 6rem 6rem 6rem;
+    color: #fff;
+}
+#team h1{
+    font-size: 69px;
+    margin-bottom: 1rem;
+}
+.team-names{
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 10px;
+    height: 65px;
+    border-radius: 30px;
+    margin: 1.5rem;
+    background: #FFB3B2;
+}
+.next{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
