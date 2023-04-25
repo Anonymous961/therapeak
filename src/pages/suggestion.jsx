@@ -4,7 +4,7 @@ import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 
 const Suggestion = () => {
     return ( 
-        <>
+        <div className="container-fluid suggestion">
         <div className="section">
         <h1>MOVIES FOR YOU</h1>
         <div className="gridd">
@@ -62,7 +62,7 @@ const Suggestion = () => {
             <FontAwesomeIcon className="playicon" icon={faCirclePlay} />
         </div>
         </div>
-        </> 
+        </div> 
     );
 }
  

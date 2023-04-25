@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+/* *{
     margin: 0; 
     padding: 0;
-}
-body,html {
+} */
+/* body,html {
   background-color: #FFB3B2;
   background-image: url("https://img.freepik.com/free-vector/colorful-abstract-background_53876-93087.jpg");
   font-size: 14px;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
+} */
+
+.suggestion{
+  background-color: #FFB3B2;
+  background-image: url("https://img.freepik.com/free-vector/colorful-abstract-background_53876-93087.jpg");
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 2rem;
 }
 
 h1 {
