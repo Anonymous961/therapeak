@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+}
+body,html {
+  background-color: #FFB3B2;
+  background-image: url("https://img.freepik.com/free-vector/colorful-abstract-background_53876-93087.jpg");
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 1em 1.5em;
+  font-weight: bold;
+  text-align: center;
+ }
+
+.gridd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 40px;
+  grid-column-gap: 9.6em;
+  grid-auto-rows: 350px;
+  grid-auto-flow: roww dense; 
+  margin-bottom: 120px;
+}
+
+.cardd {
+  margin: 30px;  
+  border-radius: 10px;
+  height: 25em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #c4c4c4;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url("https://live.staticflickr.com/162/339229239_63e4f11a79_b.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  transition: box-shadow .3s ease-out, transform .3s ease-out;
+  transition-delay: .1s;
+ }
+  .cardd:nth-of-type(2n) {
+    background-image: url("https://m.media-amazon.com/images/I/81JGFBE8ZaL._SL1500_.jpg"); 
+}
+  .cardd:nth-of-type(3n) {
+    background-image: url("https://m.media-amazon.com/images/S/pv-target-images/85bb93c2843d26232efd1a71f9eea0f0ecbc4a5d470420c4e4ffee464199c719.jpg"); 
+}
+  .cardd:nth-of-type(4n) {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/aa17005fd6e7eb3e15e32b9f9252e0aea07b50c7bd0bfe686ac45498fc6f809b._RI_V_TTW_.jpg"); 
+}
+  .cardd:nth-of-type(5n) {
+    background-image: url("https://stat4.bollywoodhungama.in/wp-content/uploads/2016/03/74637384.jpg"); 
+}
+  .cardd:nth-of-type(6n) {
+    background-image: url("https://blogtobollywood.com/wp-content/uploads/2014/06/Queen-Movie-poster-e1409404760978.jpg");
+ }
+  .cardd:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #110b0a;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px; 
+}
+  .cardd:hover {
+    box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+    transform: translate(0, -0.4rem);
+ }
+    .cardd:hover:after {
+      opacity: 0; 
+    }
+
+  .cardd__details {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background: #FC755E;
+    color: #000000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+ .roww{
+    background-color: #FCF3C6;
+    box-shadow: 0 0 0 0.5em rgba(0, 0, 0, 0.125) ;
+    width: 600px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-left: 450px;
+    margin-bottom: 30px;
+ }
+
+ .roww_content{
+    flex: 1;
+    padding: 15px;
+    font-weight: 700;
+    margin-left: 20px
+ }
+
+ .roww:hover {
+  box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+  transform: translate(0, -0.4rem); }
+ 
+.playicon{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-top: 13px;
+  margin-right: 17px;
+}
+
+.playicon:hover{
+  cursor: pointer;
+  color: #434B7A;
+  transition: 0.2s ease-in;
+}
