@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import ProfilePage from "./pages/profilePage";
 import Navbarr from './reusables/navbar';
 import Foot from './reusables/footer';
+import Suggestion from "./pages/suggestion";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/profile" element={<ProfilePage />} />
+          <Route exact path="/suggestion" element={<Suggestion />} />
         </Routes>
       <Foot/>
       </Router>
