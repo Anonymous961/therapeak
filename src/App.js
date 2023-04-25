@@ -5,6 +5,7 @@ import ProfilePage from "./pages/profilePage";
 import Navbarr from './reusables/navbar';
 import Foot from './reusables/footer';
 import Suggestion from "./pages/suggestion";
+import Games from "./pages/games";
 
 function App() {
   return (

@@ -2,28 +2,28 @@ import './styles/games.css'
 const Games = () => {
     return ( 
         <>
-        <div className="section">
-        <h1>GAMES TO PUT YOU IN A GOOD MOOD</h1>
-        <div className="grids">
-          <div className="cards">
-            <div className="cards__details">
+        <div class="section">
+        <h1 className='game-heading'>GAMES TO PUT YOU IN A GOOD MOOD</h1>
+        <div class="grid">
+          <div class="gamecard">
+            <div class="gamecard__details">
               Virtual Cottage
             </div>
           </div>
-          <div className="cards">
-            <div className="cards__details">
+          <div class="gamecard">
+            <div class="gamecard__details">
               Grand Mountain Adventure
             </div>
           </div>
-          <div className="cards">
-            <div className="cards__details">
+          <div class="gamecard">
+            <div class="gamecard__details">
               My Oasis
             </div>
           </div>
           
         </div>
 
-        <h2> MORE GAMES COMING SOON </h2>
+        <h2 className='notgame'> MORE GAMES COMING SOON </h2>
         </div>
         </>
 
