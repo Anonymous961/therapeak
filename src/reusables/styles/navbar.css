@@ -1,0 +1,15 @@
+.navbarr{
+    background-color: #2E376B;
+}
+#bttn-profile{
+    border-radius: 50%;
+    background: #F16D52;
+    height: 80px;
+    width: 80px;
+}
+.navs{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}

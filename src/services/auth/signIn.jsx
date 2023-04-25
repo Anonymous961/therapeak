@@ -22,45 +22,33 @@ const SignIn = () => {
       });
   };
 
-  const SignIn = () => {
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log("user signed in", user);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
-
-  return (
-    <>
-      <div className="container">
-        <form onSubmit={SignIn}>
-          <label>Email:</label>
-          <input
-            type="text"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label>Password:</label>
-          <input
-            type="password"
-            name="password"
-            id=""
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
-      <span>
-        Or <br />
-        <button onClick={googleSignIn}>Google</button>
-      </span>
-    </>
-  );
-};
-
+    const signIn=()=>{
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log("user signed in",user)
+        })
+        .catch((error) => {
+            console.log(error.message)
+        });
+    }
+    
+    return ( 
+        <>
+            <div className="container">
+                <form onSubmit={signIn}>
+                    <label>Email:</label>
+                    <input type="text" required value={email} onChange={(e)=>setEmail(e.target.value)} />
+                    <label>Password:</label>
+                    <input type="password" name="password" id="" value={password} onChange={(e)=>setPassword(e.target.value)} />
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <span>Or <br />
+            <button onClick={googleSignIn}>Google</button>
+            </span>
+        </>
+     );
+}
+ 
 export default SignIn;
