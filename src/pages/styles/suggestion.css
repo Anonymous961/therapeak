@@ -12,7 +12,7 @@ body,html {
   font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+.suggestion-heading {
   font-size: 4rem;
   margin: 1em 1.5em;
   font-weight: bold;
@@ -110,7 +110,7 @@ h1 {
  .roww_content{
     flex: 1;
     padding: 15px;
-    font-weight: 700;
+    font-weight: 1400;
     margin-left: 20px
  }
 
@@ -120,8 +120,8 @@ h1 {
  
 .playicon{
   color: rgb(0, 0, 0);
-  font-size: 25px;
-  margin-top: 13px;
+  font-size: 30px;
+  margin-top: 17px;
   margin-right: 17px;
 }
 

@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/profile" element={<ProfilePage />} />
           <Route exact path="/suggestion" element={<Suggestion />} />
+          <Route exact path="/game" element={<Games />} />
         </Routes>
       <Foot/>
       </Router>

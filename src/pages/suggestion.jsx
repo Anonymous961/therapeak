@@ -6,7 +6,7 @@ const Suggestion = () => {
     return ( 
         <>
         <div className="section">
-        <h1>MOVIES FOR YOU</h1>
+        <h1 className='suggestion-heading'>MOVIES FOR YOU</h1>
         <div className="gridd">
           <div className="cardd">
             <div className="cardd__details">
@@ -41,7 +41,7 @@ const Suggestion = () => {
           
         </div>
 
-        <h1> SONGS RECOMMENDED FOR YOU </h1>
+        <h1 className='suggestion-heading'>SONGS RECOMMENDED FOR YOU</h1>
         <div className="roww">
             <div className="roww_content">
                 <p> 'The way you make me feel' by Michael Jackson</p>
