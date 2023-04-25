@@ -1,8 +1,9 @@
 import './styles/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-
+import { useNavigate } from 'react-router'
 const Home = () => {
+    const navigate=useNavigate();
     return ( 
         <div className="container-fluid">
             <div className="row" id="upper-land-page">
@@ -44,7 +45,7 @@ const Home = () => {
                             <div className="col-10">
                             <h3>Suggestions: We suggest you with music, podcasts, movies, series and much more according to your mood to impact your mental health positively.</h3>
                             </div>
-                            <div className="col-1"><button className='next'><FontAwesomeIcon icon={faAngleRight} style={{marginTop:"5rem",width:"50px",height:"50px"}}/></button></div>
+                            <div className="col-1"><button onClick={()=>navigate("/suggestion")} className='next'><FontAwesomeIcon icon={faAngleRight} style={{marginTop:"5rem",width:"50px",height:"50px"}}/></button></div>
                         </div>
                         <div className='row'>
                             <div className="col-10">
