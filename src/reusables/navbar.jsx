@@ -31,7 +31,7 @@ const Navbarr = () => {
             <Nav.Link
               className="navs"
               style={{ fontSize: "25px" }}
-              href="#about"
+              href="/#about"
             >
               About Us
             </Nav.Link>

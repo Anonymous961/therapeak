@@ -104,7 +104,7 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button className="next">
+                <button onClick={()=>navigate("/journal")} className="next">
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
@@ -123,6 +123,7 @@ const Home = () => {
               <div className="col-1">
                 <button className="next">
                   <FontAwesomeIcon
+                  onClick={()=>navigate("/game")}
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
                   />
@@ -158,7 +159,7 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button className="next">
+                <button onClick={()=>navigate('/chatbox')} className="next">
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
