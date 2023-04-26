@@ -1,0 +1,107 @@
+.doctor{
+    position: absolute;
+    width: 2000px;
+    height: 1024px;
+    
+    background: #BAD8F5;
+    }
+    
+    
+    .therapists{
+        position: absolute;
+    width: 1500px;
+    height: 800px;
+    margin-left: 250px;
+    margin-top: 100px;
+    
+    background: #434B7A;
+    border-radius: 80px;
+    }
+    .doctor .therapists h1{
+        position: relative;
+        font-size: 50px;
+        color: white;
+        left: 550px;
+        top: 30px;
+    }
+    .doctor .therapists h2{
+        position: relative;
+        font-size: 20px;
+        color: white;
+        left: 400px;
+        top: 20px;
+    }
+    .therapists .doc{
+        position: relative;
+    width: 596px;
+    height: 163px;
+    left: 97px;
+    top: 200px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    }
+    .doctor .doc-gif img{
+        margin-left: 900px;
+        width: 500px;
+        height: 400px;
+    }
+    .therapists .doc .doc-img{
+     position: absolute;
+    width: 107px;
+    height: 116px;
+    left: 50px;
+    top: 25px;
+    
+    border-radius: 20px;
+    }
+    
+    
+    .therapists .doc .doc-name{
+        position: absolute;
+    width: 313px;
+    height: 36px;
+    left: 260px;
+    top: 20px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    
+    .therapists .doc .doc-spec{
+        position: absolute;
+    width: 224px;
+    height: 23px;
+    left: 265px;
+    top: 65px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #000000;
+    
+    }
+    
+    .therapists .doc .book{
+        
+    position: absolute;
+    width: 123px;
+    height: 44px;
+    left: 460px;
+    top: 110px;
+    color: white;
+    
+    background: #434B7A;
+    border-radius: 20px;
+    }
+    
+    
