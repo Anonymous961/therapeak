@@ -5,6 +5,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router";
 import PopUp from "../reusables/popUp";
 import SignUp from "../services/auth/signUp";
+import { auth } from "../services/firebase";
 const Home = () => {
   const navigate = useNavigate();
   const [popUp, setPopup] = useState(false);
@@ -15,9 +16,16 @@ const Home = () => {
           <h2 id="tagline">
             With you, <br /> from fear to cheer.
           </h2>
-          <button id="join" onClick={() => setPopup(true)}>
-            Join us
-          </button>
+          {!auth.currentUser && (
+            <button id="join" onClick={() => setPopup(true)}>
+              Join us
+            </button>
+          )}
+          {auth.currentUser && (
+            <button id="join" onClick={navigate('/profile')}>
+              Profile
+            </button>
+          )}
         </div>
         <PopUp trigger={popUp} setTrigger={setPopup}>
           <SignUp />
