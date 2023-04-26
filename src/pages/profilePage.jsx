@@ -38,10 +38,11 @@ const ProfilePage=()=> {
     <div>
       {user && (
         <div class="profile-bg">
-          <div class="profile-full">
+          <div class="container profile-full">
+
             <div class="first-half">
               <div class="profile-pic">
-                <img src={user.photoURL} alt="Profile" />
+                <img style={{maxWidth:"100%"}} src={user.photoURL} alt="Profile" />
               </div>
               <div class="profile-name">Hello, {user.name} !</div>
               <div class="profile-name-small">{user.bio}</div>
