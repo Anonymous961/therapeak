@@ -16,16 +16,9 @@ const Home = () => {
           <h2 id="tagline">
             With you, <br /> from fear to cheer.
           </h2>
-          {!auth.currentUser && (
-            <button id="join" onClick={() => setPopup(true)}>
-              Join us
-            </button>
-          )}
-          {auth.currentUser && (
-            <button id="join" onClick={navigate('/profile')}>
-              Profile
-            </button>
-          )}
+          <button id="join" onClick={() => setPopup(true)}>
+            Join us
+          </button>
         </div>
         <PopUp trigger={popUp} setTrigger={setPopup}>
           <SignUp />
@@ -104,7 +97,7 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button onClick={()=>navigate("/journal")} className="next">
+                <button onClick={() => navigate("/journal")} className="next">
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
@@ -123,7 +116,7 @@ const Home = () => {
               <div className="col-1">
                 <button className="next">
                   <FontAwesomeIcon
-                  onClick={()=>navigate("/game")}
+                    onClick={() => navigate("/game")}
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
                   />
@@ -159,7 +152,7 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button onClick={()=>navigate('/chatbox')} className="next">
+                <button onClick={() => navigate("/chatbox")} className="next">
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}
@@ -175,7 +168,10 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button onClick={()=>navigate("/docconnect")} className="next">
+                <button
+                  onClick={() => navigate("/docconnect")}
+                  className="next"
+                >
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./styles/cards.css";
 
 const Card = ({ journal }) => {
@@ -11,12 +10,10 @@ const Card = ({ journal }) => {
         <p>At: {journal.timestamp.toDate().toDateString()}</p>
       </div>
 
-      <div className="card-content">
-        <h3>{journal.title}</h3>
-      </div>
+      <div className="card-content">{journal.title}</div>
 
       <div className="card-delete">
-        <img src="https://i.postimg.cc/G3G6ByrK/Vector.png" />
+        <img src="https://i.postimg.cc/G3G6ByrK/Vector.png" alt="delete"/>
       </div>
     </div>
   );

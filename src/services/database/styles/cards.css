@@ -1,16 +1,22 @@
 .cards {
   box-sizing: border-box;
+  display: inline-block;
+  flex-direction: column;
   align-items: center;
-
+  justify-content: center;
   width: 249px;
   height: 238px;
-
+  padding: 30px;
+  margin: 10px;
   background: #fcf3c6;
   border: 1px solid #000000;
   box-shadow: 7px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 195px;
   height: 39px;
   left: 983px;
@@ -21,6 +27,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
 }
 
 .time {
@@ -32,10 +39,9 @@
   font-size: 20px;
   line-height: 23px;
   color: #000000;
+  margin-top: 10px;
 }
 
 .card-delete {
-    position: relative;
-  left: 207px;
-  top: 188px;
+  margin-top: 15px;
 }

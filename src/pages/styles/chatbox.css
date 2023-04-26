@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 /* * {
     margin: 0;
     padding: 0;
@@ -13,15 +13,16 @@
     min-height: 100vh;
     background-image: url("https://t4.ftcdn.net/jpg/03/07/55/03/360_F_307550392_TLfmBMFsRZbt0uNSeohoXuvPTSRCaKIt.jpg");
   } */
-  
-  .chatBox{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway';
-    min-height: 100vh;
-    background-image: url("https://t4.ftcdn.net/jpg/03/07/55/03/360_F_307550392_TLfmBMFsRZbt0uNSeohoXuvPTSRCaKIt.jpg");
-  }
+
+.chatBox {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  min-height: 100vh;
+  background-image: url("https://t4.ftcdn.net/jpg/03/07/55/03/360_F_307550392_TLfmBMFsRZbt0uNSeohoXuvPTSRCaKIt.jpg");
+}
 .containerr {
   position: relative;
   max-width: 100%;
@@ -60,7 +61,7 @@
   position: relative;
   width: 100%;
   height: 60px;
-  background: #434B7A;
+  background: #434b7a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,10 +78,10 @@
   padding-top: 15px;
   border-radius: 50%;
 }
-h4{
-color: white;
+h4 {
+  color: white;
 }
-  
+
 .cover {
   position: absolute;
   top: 0;
@@ -145,7 +146,6 @@ color: white;
   position: relative;
   height: calc(100% - 110px);
   overflow: auto;
-  
 }
 
 .chatlist .block {
@@ -202,7 +202,7 @@ color: white;
 }
 
 .chatlist .block.unread .details .listHead .time {
-  color: #EF5231;
+  color: #ef5231;
 }
 
 .message_p {
@@ -212,7 +212,7 @@ color: white;
 }
 
 .message_p b {
-  background: #EF5231;
+  background: #ef5231;
   color: #fff;
   min-width: 20px;
   height: 20px;
@@ -256,10 +256,10 @@ color: white;
 .chatbox {
   position: relative;
   width: 100%;
-  height: calc(100% - 120px);
+  height: 600px;
   padding: 50px;
-  overflow-y: auto;
-  background-color: #B6DBFF;
+  overflow-y: scroll;
+  background-color: #b6dbff;
   background-image: url();
 }
 
@@ -276,7 +276,7 @@ color: white;
   text-align: right;
   max-width: 65%;
   padding: 12px;
-  background: #FFB3B2;
+  background: #ffb3b2;
   border-radius: 10px;
   font-size: 0.9em;
 }
@@ -290,8 +290,8 @@ color: white;
   height: 20px;
   background: linear-gradient(
     135deg,
-    #FFB3B2 0%,
-    #FFB3B2 50%,
+    #ffb3b2 0%,
+    #ffb3b2 50%,
     transparent 50%,
     transparent
   );
@@ -304,7 +304,7 @@ color: white;
   opacity: 0.5;
 }
 
-.my_msg {
+.msg {
   justify-content: flex-end;
 }
 
@@ -337,7 +337,7 @@ color: white;
   position: relative;
   width: 100%;
   height: 60px;
-  background: #434B7A;
+  background: #434b7a;
   padding: 15px;
   display: flex;
   justify-content: space-between;
