@@ -1,0 +1,116 @@
+.profile-bg{
+    background: url("https://i.postimg.cc/52vVY63J/image-9.png");
+    width: 100%;
+    height: 1200px;
+}
+
+.profile-full{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 40px;
+    opacity: 90%;
+}
+
+.profile-full .first-half{
+    position: absolute;
+width: 1440px;
+height: 509px;
+left: 0px;
+top: 3px;
+
+background: #FFB3B2;
+}
+
+.profile-full .first-half .profile-pic{
+    position: absolute;
+width: 209px;
+height: 215px;
+left: 609px;
+top: 76px;
+
+background: #2E376B;
+}
+
+.profile-full .first-half .profile-name{
+    position: absolute;
+width: 439px;
+height: 83px;
+left: 506px;
+top: 332px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 53px;
+
+color: #2E376B;
+}
+
+.profile-full .first-half .profile-name-small{
+    position: absolute;
+width: 186px;
+height: 27px;
+left: 603px;
+top: 387px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 35px;
+
+color: #2E376B;
+
+}
+
+.profile-full .both-buttons .book-appointment{
+    position: absolute;
+width: 313px;
+height: 89px;
+left: 296px;
+top: 455px;
+
+background: #EF5231;
+border-radius: 30px;
+color: white;
+}
+
+.profile-full .both-buttons .update-profile{
+    position: absolute;
+width: 313px;
+height: 89px;
+left: 782px;
+top: 455px;
+
+background: #EF5231;
+border-radius: 30px;
+color: white;
+}
+
+
+.profile-full .second-half{
+    position: absolute;
+    width: 1440px;
+    height: 509px;
+left: 0px;
+top: 508px;
+
+
+background: #2E376B;
+}
+.profile-full .second-half h3{
+
+width: 467px;
+height: 46px;
+margin-left: 550px;
+margin-top: 120px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 38px;
+line-height: 45px;
+
+color: white;
+}
