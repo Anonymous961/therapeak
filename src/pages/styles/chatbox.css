@@ -13,7 +13,32 @@
     min-height: 100vh;
     background-image: url("https://t4.ftcdn.net/jpg/03/07/55/03/360_F_307550392_TLfmBMFsRZbt0uNSeohoXuvPTSRCaKIt.jpg");
   } */
-
+  .message {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent p {
+    color: white;
+    background: #0b93f6;
+    align-self: flex-end;
+  }
+  .received p {
+    background: #e5e5ea;
+    color: black;
+  }
+  
+  /* img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+  } */
 .chatBox {
   margin: 0;
 
@@ -71,7 +96,7 @@
 .userimg {
   position: relative;
   width: 50px;
-  height: 40px;
+  height: 50px;
   overflow: hidden;
   cursor: pointer;
   color: white;
@@ -339,9 +364,9 @@ h4 {
   height: 60px;
   background: #434b7a;
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .chat_input ion-icon {
@@ -357,10 +382,25 @@ h4 {
 .chat_input input {
   position: relative;
   width: 90%;
-  margin: 0 20px;
-  padding: 10px 20px;
+  /* margin: 0 20px; */
+  /* padding: 10px 20px; */
   border: none;
   outline: none;
   border-radius: 30px;
   font-size: 1em;
+}
+#sendMessage{
+  float: right;
+  width: 80px;
+  height: 34px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background: rgb(101, 211, 241);
+  /* background: rgb(255, 255, 255); */
+}
+#sendMessage:hover{
+  cursor: pointer;
+  background: rgb(34, 161, 61);
+  color: #fff;
 }
