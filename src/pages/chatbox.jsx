@@ -2,7 +2,7 @@ import './styles/chatbox.css'
 
 const Chatbox = () => {
     return (
-        <div className="chatbox">
+        <div className="chatBox">
             <div className="containerr">
                 <div className="leftSide">
     
