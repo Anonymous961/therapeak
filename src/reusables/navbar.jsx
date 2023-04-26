@@ -2,7 +2,30 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./styles/navbar.css";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "@firebase/auth";
+import { auth } from "../services/firebase";
+import { useNavigate } from "react-router";
+
 const Navbarr = () => {
+  const [isLogin,setLogin]=useState(false);
+  const navigate=useNavigate();
+  const handleUser=()=>{
+    if(isLogin){
+      navigate('/profile');
+    }else{
+      alert("login first!")
+    }
+  }
+  useEffect(()=>{
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setLogin(true);
+      } else {
+        setLogin(false);
+      }
+    })
+  })
   return (
     <Navbar collapseOnSelect expand="lg" className="navbarr" variant="dark">
       <Container>
@@ -42,8 +65,8 @@ const Navbarr = () => {
             >
               Donate
             </Nav.Link>
-            <Nav.Link href="/profile">
-              <button id="bttn-profile">
+            <Nav.Link href="#">
+              <button onClick={handleUser} id="bttn-profile">
                 <img
                   src="https://i.postimg.cc/nzDhsp9h/gg-profile.png"
                   alt=""
