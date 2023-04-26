@@ -391,10 +391,13 @@ h4 {
 }
 #sendMessage{
   float: right;
-  margin: 5px;
-  color: #000000;
+  width: 80px;
+  height: 34px;
+  color: black;
   border-radius: 5px;
-  background: rgb(36, 181, 68);
+  border: none;
+  background: rgb(101, 211, 241);
+  /* background: rgb(255, 255, 255); */
 }
 #sendMessage:hover{
   cursor: pointer;
