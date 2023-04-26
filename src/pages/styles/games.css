@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* *{
     margin: 0; 
     padding: 0;
@@ -9,7 +9,7 @@ body,html {
   font-size: 14px;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway';
 } */
 
 .games{
@@ -18,7 +18,7 @@ body,html {
   font-size: 14px;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway';
   padding: 2rem 0 2rem 0;
 }
 .game-heading {
@@ -35,7 +35,7 @@ body,html {
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway';
  }
 
 .grid {

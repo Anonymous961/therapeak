@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .profile-bg{
     background: url("https://i.postimg.cc/52vVY63J/image-9.png");
     width: 100%;
@@ -12,7 +14,7 @@
 }
 
 .profile-full .first-half{
-    position: absolute;
+position: absolute;
 width: 1440px;
 height: 509px;
 left: 0px;
@@ -32,7 +34,7 @@ background: #2E376B;
 }
 
 .profile-full .first-half .profile-name{
-    position: absolute;
+position: absolute;
 width: 439px;
 height: 83px;
 left: 506px;
