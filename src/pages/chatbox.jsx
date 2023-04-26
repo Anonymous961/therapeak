@@ -1,3 +1,5 @@
+import './styles/chatbox.css'
+
 const Chatbox = () => {
     return (
         <div>
