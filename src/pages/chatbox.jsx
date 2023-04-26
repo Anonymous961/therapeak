@@ -1,5 +1,5 @@
 import "./styles/chatbox.css";
-import { useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { auth, db } from "../services/firebase";
 import {
   collection,
@@ -15,93 +15,79 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const Chatbox = () => {
+  // const [user, setUser] = useState(null);
+  // const navigate = useNavigate();
   const [user, setUser] = useState(null);
+  const [messages, setMessages] = useState([]);
+  const [allusers, setAllusers] = useState([]);
   const navigate = useNavigate();
+  const messagesRef = collection(db, "messages");
+  const userRef = collection(db, "users");
 
   useEffect(() => {
-    const checkIfUserLoggedIn = setInterval(() => {
-      if (auth.currentUser) {
-        clearInterval(checkIfUserLoggedIn);
-
-        const userRef = doc(db, "users", auth.currentUser.uid);
-        getDoc(userRef)
-          .then((doc) => {
-            console.log("running");
-            if (doc.exists) {
-              setUser(auth.currentUser);
-            } else {
-              console.error("User not found");
-              alert("User Data Not Found");
-              navigate("/");
-            }
-          })
-          .catch((error) => {
-            console.error("Error retrieving user data: ", error);
-            alert("User Data Not Found");
-            navigate("/");
-          });
-      }
-    }, 500);
-
-    setTimeout(() => {
-      clearInterval(checkIfUserLoggedIn);
-      if (!auth.currentUser) {
+    const checkUser = async () => {
+      const authUser = auth.currentUser;
+      if (!authUser) {
         console.error("User not logged in");
         alert("Login or Signup First");
         navigate("/");
+        return;
       }
-    }, 5000);
-  }, [navigate]);
 
-  
-  const [messages, setMessages] = useState([]);
-  
-  useEffect(() => {
-    const messagesRef = collection(db, "messages");
-    const q = query(messagesRef, orderBy("createdAt"), limit(25));
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const newMessages = [];
-      querySnapshot.forEach((doc) => {
-        newMessages.push(doc.data());
-      });
-      console.log("hello")
-      setMessages(newMessages);
-    });
-    return () => {
-      unsubscribe();
+      const userDoc = await getDoc(doc(userRef, authUser.uid));
+      if (userDoc.exists) {
+        setUser(authUser);
+      } else {
+        console.error("User not found");
+        alert("User Data Not Found");
+        navigate("/");
+      }
     };
-  }, []);
 
-  const [allusers, setAllusers] = useState([]);
-  useEffect(() => {
-    const userRef = collection(db, "users");
-    const qr = query(userRef);
-    const unsubscribe = onSnapshot(qr, (querySnapshot) => {
+    const unsubscribe = onSnapshot(
+      query(messagesRef, orderBy("createdAt"), limit(25)),
+      (querySnapshot) => {
+        const newMessages = [];
+        querySnapshot.forEach((doc) => {
+          newMessages.push(doc.data());
+        });
+        console.log("hello");
+        setMessages(newMessages);
+      }
+    );
+
+    const userUnsubscribe = onSnapshot(query(userRef), (querySnapshot) => {
       const newUsers = [];
       querySnapshot.forEach((doc) => {
         newUsers.push(doc.data());
       });
       setAllusers(newUsers);
     });
+
+    checkUser();
+
     return () => {
       unsubscribe();
+      userUnsubscribe();
     };
-  }, []);
-  const [formValue, setFormValue] = useState("");
+  }, [navigate]);
 
+
+  const inputRef = useRef(null);
   const sendMessage = async (e) => {
     e.preventDefault();
+    const inputValue = inputRef.current.value.trim();
+    if (!inputValue) return;
     const messagesRef = collection(db, "messages");
     const { uid, photoURL } = user;
 
     await addDoc(messagesRef, {
-      text: formValue,
+      text: inputValue,
       createdAt: serverTimestamp(),
       uid,
       photoURL,
     });
-
-    setFormValue("");
+    inputRef.current.value = ""; 
   };
   return user == null ? (
     <p
@@ -170,15 +156,8 @@ const Chatbox = () => {
 
         <div className="chat_input">
           <form onSubmit={sendMessage}>
-            <input
-              type="text"
-              value={formValue}
-              onChange={(e) => setFormValue(e.target.value)}
-              placeholder="Type a message"
-            />
-            <button type="submit" disabled={!formValue}>
-              Send
-            </button>
+            <input type="text" ref={inputRef} placeholder="Type a message" />
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
