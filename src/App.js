@@ -5,6 +5,7 @@ import ProfilePage from "./pages/profilePage";
 import Navbarr from './reusables/navbar';
 import Foot from './reusables/footer';
 import Suggestion from "./pages/suggestion";
+import Games from "./pages/games";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/profile" element={<ProfilePage />} />
           <Route exact path="/suggestion" element={<Suggestion />} />
+          <Route exact path="/game" element={<Games />} />
         </Routes>
       <Foot/>
       </Router>
