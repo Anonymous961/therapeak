@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: 'Raleway';
     min-height: 100vh;
     background-image: url("https://t4.ftcdn.net/jpg/03/07/55/03/360_F_307550392_TLfmBMFsRZbt0uNSeohoXuvPTSRCaKIt.jpg");
   }

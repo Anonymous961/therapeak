@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* *{
     margin: 0; 
     padding: 0;
@@ -9,7 +9,6 @@
   font-size: 14px;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
 } */
 
 .suggestion{
@@ -18,7 +17,7 @@
   font-size: 14px;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway';
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
