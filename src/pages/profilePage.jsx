@@ -39,25 +39,24 @@ const ProfilePage=()=> {
       {user && (
         <div class="profile-bg">
           <div class="container profile-full">
-
             <div class="first-half">
               <div class="profile-pic">
                 <img style={{maxWidth:"100%"}} src={user.photoURL} alt="Profile" />
               </div>
-              <div class="profile-name">Hello, {user.name} !</div>
-              <div class="profile-name-small">{user.bio}</div>
+              <div className="profile-name">Hello, {user.name} !</div>
+              <div className="profile-name-small">{user.bio}</div>
             </div>
 
-            <div class="second-half">
+            <div className="second-half">
               <h3> Your Previous Journals</h3>
-              <div class="journal-cards">
+              <div className="journal-cards">
                 <CardList user={user} />
               </div>
             </div>
 
-            <div class="both-buttons">
-              <button class="book-appointment">Book Appointment</button>
-              <button class="update-profile">Update Profile</button>
+            <div className="both-buttons">
+              <button className="book-appointment">Book Appointment</button>
+              <button className="update-profile">Update Profile</button>
             </div>
           </div>
         </div>
