@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .profile-bg{
     background: url("https://i.postimg.cc/52vVY63J/image-9.png");
     width: 100%;
     height: 1200px;
     padding: 3rem;
+    font-family: 'Raleway';
 }
 
 .profile-full{
