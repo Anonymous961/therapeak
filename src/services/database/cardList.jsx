@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import './styles/cardlist.css'
 import Card from "./Cards";
 
 const CardList = ({ user }) => {
