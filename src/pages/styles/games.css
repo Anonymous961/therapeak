@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+/* *{
     margin: 0; 
     padding: 0;
 }
@@ -10,8 +10,17 @@ body,html {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
-}
+} */
 
+.games{
+  background-color:#BAD8F5;
+  background-image: url("https://media.istockphoto.com/id/1341107435/vector/abstract-cover-design-with-light-blue-gradient-and-thin-lines-a3.jpg?s=612x612&w=0&k=20&c=xQGg2wVY_-w72OhvbwQkbDgRLuahQ3DKrg0iaCv3eW8=");
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem 0 2rem 0;
+}
 .game-heading {
   font-size: 4rem;
   margin-top: 40px;
