@@ -23,7 +23,7 @@ const Games = () => {
           
         </div>
 
-        <h2 className='notgame'> MORE GAMES COMING SOON </h2>
+        <h2 className='notgame'> 🎮 MORE GAMES COMING SOON </h2>
         </div>
         </div>
 
