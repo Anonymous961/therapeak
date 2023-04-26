@@ -112,8 +112,8 @@ const Chatbox = () => {
       Loading user data...
     </p>
   ) : (
-    <div className="chatBox">
-      <div className="containerr">
+    <div className="row chatBox">
+      <div className="col containerr">
         <div className="leftSide">
           <div className="header">
             <h4> Your friends</h4>
@@ -143,7 +143,7 @@ const Chatbox = () => {
           </div>
         </div>
       </div>
-      <div className="rightSide">
+      <div className="col-8 rightSide">
         <div className="header">
           <div className="imgText">
             <div className="userimg">
@@ -169,14 +169,15 @@ const Chatbox = () => {
         </div>
 
         <div className="chat_input">
-          <form onSubmit={sendMessage}>
+          <form style={{minWidth:"20rem"}} onSubmit={sendMessage}>
             <input
+              style={{float:"left"}} 
               type="text"
               value={formValue}
               onChange={(e) => setFormValue(e.target.value)}
               placeholder="Type a message"
             />
-            <button type="submit" disabled={!formValue}>
+            <button id="sendMessage"  type="submit" disabled={!formValue}>
               Send
             </button>
           </form>
