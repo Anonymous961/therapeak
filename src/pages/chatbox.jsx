@@ -53,28 +53,29 @@ const Chatbox = () => {
     }, 5000);
   }, [navigate]);
 
-  const messagesRef = collection(db, "messages");
-  const q = query(messagesRef, orderBy("createdAt"), limit(25));
-
+  
   const [messages, setMessages] = useState([]);
-
+  
   useEffect(() => {
+    const messagesRef = collection(db, "messages");
+    const q = query(messagesRef, orderBy("createdAt"), limit(25));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const newMessages = [];
       querySnapshot.forEach((doc) => {
         newMessages.push(doc.data());
       });
+      console.log("hello")
       setMessages(newMessages);
     });
     return () => {
       unsubscribe();
     };
-  }, [q]);
+  }, []);
 
   const [allusers, setAllusers] = useState([]);
-  const userRef = collection(db, "users");
-  const qr = query(userRef);
   useEffect(() => {
+    const userRef = collection(db, "users");
+    const qr = query(userRef);
     const unsubscribe = onSnapshot(qr, (querySnapshot) => {
       const newUsers = [];
       querySnapshot.forEach((doc) => {
@@ -85,12 +86,12 @@ const Chatbox = () => {
     return () => {
       unsubscribe();
     };
-  }, [qr]);
+  }, []);
   const [formValue, setFormValue] = useState("");
 
   const sendMessage = async (e) => {
     e.preventDefault();
-
+    const messagesRef = collection(db, "messages");
     const { uid, photoURL } = user;
 
     await addDoc(messagesRef, {
