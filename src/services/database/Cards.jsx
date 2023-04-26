@@ -8,7 +8,7 @@ const Card = ({ journal }) => {
   return (
     <div className="cards">
       <div className="time">
-        <p>At: {journal.timestamp.toString()}</p>
+        <p>At: {journal.timestamp.toDate().toDateString()}</p>
       </div>
 
       <div className="card-content">
