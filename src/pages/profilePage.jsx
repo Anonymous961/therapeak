@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../services/firebase";
 import CardList from "../services/database/cardList";
+import "./styles/profilePage.css";
 
 function ProfilePage() {
   const [user, setUser] = useState(null);
@@ -36,12 +37,28 @@ function ProfilePage() {
   return (
     <div>
       {user && (
-        <div>
-          <h2>{user.name}</h2>
-          <img src={user.photoURL} alt="Profile" />
-          <p>{user.bio}</p>
-          <p>{user.email}</p>
-          <CardList user={user}/>
+        <div class="profile-bg">
+          <div class="profile-full">
+            <div class="first-half">
+              <div class="profile-pic">
+                <img src={user.photoURL} alt="Profile" />
+              </div>
+              <div class="profile-name">Hello, {user.name} !</div>
+              <div class="profile-name-small">{user.bio}</div>
+            </div>
+
+            <div class="second-half">
+              <h3> Your Previous Journals</h3>
+              <div class="journal-cards">
+                <CardList user={user} />
+              </div>
+            </div>
+
+            <div class="both-buttons">
+              <button class="book-appointment">Book Appointment</button>
+              <button class="update-profile">Update Profile</button>
+            </div>
+          </div>
         </div>
       )}
     </div>
