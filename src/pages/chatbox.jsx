@@ -2,8 +2,8 @@ import './styles/chatbox.css'
 
 const Chatbox = () => {
     return (
-        <div>
-            <div className="container">
+        <div className="chatbox">
+            <div className="containerr">
                 <div className="leftSide">
     
                     <div className="header">
@@ -148,3 +148,5 @@ const Chatbox = () => {
         </div>
     );
 }
+
+export default Chatbox;
