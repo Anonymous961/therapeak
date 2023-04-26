@@ -5,11 +5,8 @@ const Chatbox = () => {
         <div className="chatBox">
             <div className="containerr">
                 <div className="leftSide">
-    
                     <div className="header">
-                
                             <h4> Your friends</h4>
-                        
                         <ul className="nav_icons">
                             <li><ion-icon name="scan-circle-outline"></ion-icon></li>
                             <li><ion-icon name="chatbox"></ion-icon></li>
