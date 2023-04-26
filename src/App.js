@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/profile" element={<ProfilePage />} />
           <Route exact path="/suggestion" element={<Suggestion />} />
           <Route exact path="/game" element={<Games />} />
-          <Route exact path="/chatbox" element={<Chatbox />} />
+          <Route exact path="/chatbox" element={<Chatbox/>} />
           <Route exact path="/journal" element={<Journal/>} />
           <Route exact path="/profile" element={<ProfilePage/>} />
           <Route exact path="/docconnect" element={<Docconnect/>} />
