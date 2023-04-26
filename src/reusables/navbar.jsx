@@ -42,7 +42,7 @@ const Navbarr = () => {
             >
               Donate
             </Nav.Link>
-            <Nav.Link href="#home">
+            <Nav.Link href="/profile">
               <button id="bttn-profile">
                 <img
                   src="https://i.postimg.cc/nzDhsp9h/gg-profile.png"

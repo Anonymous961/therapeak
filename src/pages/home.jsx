@@ -175,7 +175,7 @@ const Home = () => {
                 </h3>
               </div>
               <div className="col-1">
-                <button className="next">
+                <button onClick={()=>navigate("/docconnect")} className="next">
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     style={{ marginTop: "5rem", width: "50px", height: "50px" }}

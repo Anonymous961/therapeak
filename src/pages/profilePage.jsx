@@ -3,7 +3,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../services/firebase";
 import CardList from "../services/database/cardList";
 
-function ProfilePage() {
+const ProfilePage=()=> {
   const [user, setUser] = useState(null);
 
   useEffect(() => {

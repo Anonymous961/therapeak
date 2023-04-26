@@ -8,6 +8,7 @@ import Suggestion from "./pages/suggestion";
 import Games from "./pages/games";
 import Chatbox from "./pages/chatbox";
 import Journal from "./pages/journal";
+import Docconnect from "./pages/docconnect";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route exact path="/game" element={<Games />} />
           <Route exact path="/chatbox" element={<Chatbox />} />
           <Route exact path="/journal" element={<Journal/>} />
+          <Route exact path="/profile" element={<ProfilePage/>} />
+          <Route exact path="/docconnect" element={<Docconnect/>} />
         </Routes>
       <Foot/>
       </Router>
