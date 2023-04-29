@@ -1,3 +1,15 @@
+# Screenshots
+
+![alt](https://i.postimg.cc/wjX1QBJQ/landingpage.png)
+![alt](https://i.postimg.cc/nLVqsm5D/features.png)
+![alt](https://i.postimg.cc/Jhgt1BWm/profile-Page.png)
+![alt](https://i.postimg.cc/Wbn3dyP5/chatBox.png)
+![alt](https://i.postimg.cc/tCXRGzVW/journal.png)
+![alt](https://i.postimg.cc/rwHqWXZN/docconnect.png)
+![alt](https://i.postimg.cc/Y08HCJmg/movie-suggestions.png)
+![alt](https://i.postimg.cc/pXTNBcFG/games.png)
+![alt](https://i.postimg.cc/Vkr3xS4X/about-us.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
